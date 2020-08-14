@@ -3,7 +3,7 @@ import numpy as np
 
 
 def load_data():
-    dataset = pd.read_csv('/home/hafez/Documents/AI/DataSets/Churn_Modelling.csv')
+    dataset = pd.read_csv('Churn_Modelling.csv')
     return dataset
 
 
