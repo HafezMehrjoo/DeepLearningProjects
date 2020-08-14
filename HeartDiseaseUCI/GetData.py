@@ -7,7 +7,7 @@ class __array_fisrt_index__():
 
 
 def load_data():
-    return pd.read_csv('/home/hafez/Documents/AI/DataSets/heart.csv')
+    return pd.read_csv('heart.csv')
 
 
 def get_data(percent):
