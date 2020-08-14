@@ -7,7 +7,7 @@ class __array_start_counter__():
 
 
 def load_data():
-    dataset = pd.read_csv('/home/hafez/Documents/AI/DataSets/pima-indians-diabetes.data.csv')
+    dataset = pd.read_csv('pima-indians-diabetes.data.csv')
     return dataset
 
 
