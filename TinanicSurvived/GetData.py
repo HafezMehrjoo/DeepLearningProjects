@@ -4,7 +4,7 @@ from TinanicSurvived import CleanData
 
 
 def load_data():
-    return pd.read_csv('/home/hafez/Documents/AI/DataSets/TitinicSurvived.csv')
+    return pd.read_csv('TitinicSurvived.csv')
 
 
 def get_data(features, percent=100, predict=False):
