@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+from sklearn.model_selection import train_test_split
 
 
 class __array_fisrt_index__():
@@ -11,11 +12,8 @@ def load_data():
 
 
 def get_data(percent):
-    dataset = load_data()
-    array = np.array(dataset)
-    array_end_index = int(303 * percent / 100) + 1
-    train_x = array[__array_fisrt_index__.counter:(__array_fisrt_index__.counter + array_end_index), 0:13]
-    train_y = array[__array_fisrt_index__.counter:(__array_fisrt_index__.counter + array_end_index), 13:]
-    test_x = array[(__array_fisrt_index__.counter + array_end_index):, 0:13]
-    test_y = array[(__array_fisrt_index__.counter + array_end_index):, 13:]
-    return train_x, train_y, test_x, test_y
+    df = load_data()
+    y = df['target']
+    df.drop(columns='target', inplace=True)
+    x = df
+    return train_test_split(x, y, random_state=0, train_size=percent / 100)
