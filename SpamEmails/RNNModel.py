@@ -33,6 +33,6 @@ plt.plot(range(1, len(history.history['acc']) + 1), history.history['acc'], labe
 plt.plot(range(1, len(history.history['val_acc']) + 1), history.history['val_acc'], label='Accuracy of Validation')
 plt.xlabel('epochs')
 plt.ylabel('accuracy')
-plt.title('my first lstm model for spam detection')
+plt.title('RNN model for spam detection')
 plt.legend()
 plt.show()
